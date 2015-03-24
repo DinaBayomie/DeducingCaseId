@@ -34,7 +34,7 @@ for k in dicArr :
 
 gateway.shutdown()
 S = [] # Extracted Sequence from given unlabeled event log
-GivenConfidenceLevel=0#.3
+GivenRankingScore=0#.3
 
 ''' removing folders '''
 txtDirectory="labeledEventLog_txt/"
@@ -107,13 +107,13 @@ fin.close()
 print 'T' ,T
 
 
-cl=int(sys.argv[3])
-if (cl >0):
-    GivenConfidenceLevel=cl
+rs=int(sys.argv[3])
+if (rs >0):
+    GivenRankingScore=rs
 
 
 #applying DCI approach
-alg=Algorithm(S,T,M,Parents,startActivity,GivenConfidenceLevel)       
+alg=Algorithm(S,T,M,Parents,startActivity,GivenRankingScore)       
 alg.apply_algorithm()
 
 print "event logs"
