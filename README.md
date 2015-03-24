@@ -1,6 +1,6 @@
 <h5>Source code associate the paper
 <h1>Deducing Case IDs for Unlabeled Event Logs 
-<h5>By: Dina Bayomie , Iman Helal , Dr. Ahmed Hany
+<h5>By: Dina Bayomie, Iman Helal, Ahmed Hany
 
 To run our code first: 
 - run Behavioral profile 
@@ -23,4 +23,4 @@ The output exists in 4 folders:
 <br>
 <br>
 <br>
-This work is copy writed to: Dina Bayomie , Iman Helal , Dr. Ahmed Hany @2015
+This research work is copy righted to: Dina Bayomie, Iman Helal, Ahmed Hany @2015
