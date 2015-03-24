@@ -3,7 +3,9 @@
 <h5>By Dina Bayomie , Iman Helal , Ahmed Hany
 
 To run our code first: 
-- run Behavioral profile
+- run Behavioral profile 
+  - get jbpt library from https://code.google.com/p/jbpt
+  - see "https://code.google.com/p/jbpt/source/browse/trunk/jbpt-test/src/test/java/org/jbpt/test/tree/BCTreeTest.java" to add a process model.
 - run _int.main in DCI using python 2.6 , with arguments
   - Unlabeled event log in (.txt or .csv) formats
   - Heuristic data in (.csv) format
