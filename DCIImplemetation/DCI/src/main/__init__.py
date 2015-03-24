@@ -106,6 +106,12 @@ for row in reader:
 fin.close()
 print 'T' ,T
 
+
+cl=int(sys.argv[3])
+if (cl >0):
+    GivenConfidenceLevel=cl
+
+
 #applying DCI approach
 alg=Algorithm(S,T,M,Parents,startActivity,GivenConfidenceLevel)       
 alg.apply_algorithm()
