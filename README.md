@@ -1,4 +1,4 @@
-<h5>Source code accompany the paper
+<h5>Source code associate the paper
 <h1> Deducing Case IDs for Unlabeled Event Logs 
 <h5>By Dina Bayomie , Iman Helal , Ahmed Hany
 
