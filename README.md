@@ -4,7 +4,7 @@
 
 To run our code first: 
 - run Behavioral profile 
-  - Get jbpt library from https://code.google.com/p/jbpt
+  - Get jbpt library from "https://code.google.com/p/jbpt"
   - See "https://code.google.com/p/jbpt/source/browse/trunk/jbpt-test/src/test/java/org/jbpt/test/tree/BCTreeTest.java" to add a process model.
   - Add process model in "main" of our modified behavioral profile project
 - run _int.main in DCI using python 2.6 , with arguments
