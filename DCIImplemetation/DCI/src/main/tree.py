@@ -18,8 +18,8 @@ class Tree:
     def nodes(self):
         return self.__nodes
 
-    def add_node(self, percentage ,casePercentage ,identifier ,activity = 'start', caseId= 0 , parent=0):
-        node = Node(percentage,casePercentage,identifier ,activity , caseId , parent )
+    def add_node(self, percentage ,casePercentage,eventIdentifier ,identifier ,activity = 'start', caseId= 0 , parent=0,timestampDatetime=None):
+        node = Node(percentage,casePercentage,eventIdentifier,identifier ,activity , caseId , parent,timestampDatetime )
         node_identifier=node.identifier
         if parent is not None:
             parent.add_child(node)
@@ -30,10 +30,10 @@ class Tree:
     def display(self, node, depth=_ROOT):
         children = node.children
         if depth == _ROOT:
-            print node.identifier,'  ',node.activity,'  ', self.trunc(node.percentage, 5)
+            print node.identifier,' ',node.eventIdentifier,'  ',node.activity,'  ', self.trunc(node.percentage, 5)
 
         else:
-            print '\t'*depth, node.identifier,'  ',node.activity,'  ', self.trunc(node.percentage, 5)
+            print '\t'*depth, node.identifier,' ',node.eventIdentifier,'  ',node.activity,'  ', self.trunc(node.percentage, 5)
 
         depth += 1
         for child in children:

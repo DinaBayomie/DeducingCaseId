@@ -4,7 +4,7 @@ Information System Department, Faculty of computers and Information System
 Cairo University, Egypt
 '''
 class Node:
-    def __init__(self,percentage,casePercentage, identifier = 0 ,activity = 'start', caseId= 0 ,parent=0):
+    def __init__(self,percentage,casePercentage,eventIdentifier ,identifier = 0 ,activity = 'start', caseId= 0 ,parent=0 ,timestampDatetime = None):
         self.__timestamp = int(identifier)
         self.__identifier =''.join((str(caseId),' ',str(identifier)))#"{0} {1}".format(caseId,identifier) # CaseId:timestamp
         self.__children = []
@@ -13,6 +13,8 @@ class Node:
         self.__activity=activity
         self.__percentage=percentage # p(x|y= parent)
         self.__casePercentage=casePercentage
+        self.__timestampDatetime=timestampDatetime
+        self.__eventIdentifier=eventIdentifier # to connect all nodes of the same event 
         
         
     @property
@@ -48,8 +50,17 @@ class Node:
     @property
     def casePercentage(self):
         return self.__casePercentage
-    
+
+    @property
+    def timestampDatetime(self):
+        return self.__timestampDatetime
+
+    @property
+    def eventIdentifier(self):
+        return self.__eventIdentifier
+
     def print_node(self):
         return str(str(self.__caseId)+' '+str(self.__timestamp)+''+self.__activity+'')
-      
+        #return str('<caseID='+str(self.__caseId)+'/><Timestamp='+self.__timestamp+'/><Activity='+self.__activity+'/>')
+    
     
