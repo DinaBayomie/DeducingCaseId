@@ -1,0 +1,17 @@
+Activity,Average,SD,Min,Max
+t02 check confirmation of receipt,15069.3901463415,599342,15.29,614411.017
+t04 determine confirmation of receipt,18841.6320731707,746756,0.63,765597.507
+t05 print and send confirmation of receipt,13010.7187,500645,12.939,513655.123
+t06 determine necessity of stop advice,88574.1278333333,1832909,14.294,1921482.663
+t10 determine necessity to stop indication,2878.70623076923,98407,17.518,101284.734
+t16 report reasons to hold request,52.483,0,52.483,52.483
+t17 check report y to stop indication,24.167,0,24.167,24.167
+t19 determine report y to stop indication,32.157,0,32.157,32.157
+t20 print report y to stop indication,15.91,0,15.91,15.91
+t11 create document x request unlicensed,4133622.5125,3630473,503150.405,7764094.62
+t12 check document x request unlicensed,35.679,0,35.679,35.679
+t14 determine document x request unlicensed,35.394,0,35.394,35.394
+t15 print document x request unlicensed,72.824,0,72.824,72.824
+t07-1 draft intern advice aspect 1,72699.863,0,72699.863,72699.863
+t08 draft and send request for advice,56.378,0,56.378,56.378
+t09-1 process or receive external advice from party 1,466.949,0,466.949,466.949
