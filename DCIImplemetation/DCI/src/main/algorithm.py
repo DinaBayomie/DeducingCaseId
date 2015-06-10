@@ -454,7 +454,7 @@ class Algorithm:
         for elogId in self.eventLogsDic:
             branches = []
             branches = self.eventLogsDic[elogId]
-            traceLogObject = TraceLog(traceLogId,branches,self.activitiesProb,self.root)
+            '''traceLogObject = TraceLog(traceLogId,branches,self.activitiesProb,self.root)
             self.otherConstructedTraces.append(traceLogObject)
             traceLogId+=1
             '''
@@ -468,7 +468,7 @@ class Algorithm:
                     self.constructedTraces.append(traceLogObject)
                 else:
                     self.otherConstructedTraces.append(traceLogObject)
-            '''  
+            
                     
 
     def apply_algorithm(self):
